@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:wght@400;600&display=swap');
+
+.homeContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #BCC6D5;
+}
+  
+.homeContent {
+  top: 60px;
+  height: calc(100vh - 60px);
+  display: flex;
+  background-color: rgba(188, 198, 213, 0.5);
+}  
+
+.homeDashboard {
+  width: 20vw;
+  height: calc(100vh - 60px);
+  background-color: rgb(97, 139, 197);
+}
+
+.homeDisplay {
+  width: 80vw;
+  height: calc(100vh - 60px);
+}
+
+.homeHeader1 {
+  font-family: 'AbrilFatface', serif;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  background: linear-gradient(45deg, rgb(45, 89, 151), rgb(86, 52, 177));
+  margin-bottom: 0px;
+  height: 60px;
+}
+
+.homeHeader2 {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+  
+.homeHeader3 {
+  margin-top: 30px;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  margin: 0px;
+}
+
+.homeInfo {
+  width: 60vw;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navBtn {
+  margin: 5px;
+  padding: 5px;
+  margin-bottom: 15px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+}
+
+.homeSelectedView {
+  background-color: #BCC6D5;
+}
+
+.homeLink {
+  font-weight: bold;
+  width: auto;
+  text-align: center; 
+}
+
+.icon {
+  width: 4.5vw;
+  height: auto;
+}
+
+.homeQtnDiv {
+  height: calc(100vh - 60px);
+  overflow-y: scroll;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.homeQtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(188, 198, 213, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#homeQuestion {
+  font-weight: bold;
+}
+
+.submitBtn {
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: rgb(97, 139, 197);
+}

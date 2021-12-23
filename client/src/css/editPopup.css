@@ -1,0 +1,32 @@
+.popupBg {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupCont {
+    position: relative;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.editPopClose {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 35px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    margin-bottom: 20px;
+}

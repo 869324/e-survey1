@@ -1,0 +1,58 @@
+.add {
+    max-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: rgb(245, 245, 245, 0.7);
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.addForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #BCC6D5;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    padding: 10px;
+}
+
+.addInput, .addAdjust, .addBtn {
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+  font-size: 18px;
+  width: 22vw;
+}
+
+.addOptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.addTextarea {
+    width: 60em;
+    height: 5em;
+}
+
+.addAdjust {
+    width: auto;
+    background-color: rgb(45, 89, 151);
+}
+
+.addBtn {
+    background-color: #1AC488;
+}
+
+.addHeader3 {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}

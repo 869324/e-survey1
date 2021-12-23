@@ -1,0 +1,35 @@
+.editQtnDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(188, 198, 213, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.editBtn {
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 70px;
+}
+
+#btnEdit {
+    margin-right: 30px;
+    background-color: rgb(45, 89, 151);
+}
+
+#btnDelete {
+    background-color: brown;
+}
+
+.editQtn {
+    font-weight: bold;
+}
+
+.editInfoDiv {
+    color: brown;
+}
