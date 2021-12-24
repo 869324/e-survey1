@@ -370,6 +370,6 @@ app.post("/recordLocation", (req, res) => {
     db.query(query, [lat, lng]);
 });
 
-app.listen(3080, () => {
+app.listen(process.env.PORT || 3080, () => {
     console.log("server running on port 3080");
 })
