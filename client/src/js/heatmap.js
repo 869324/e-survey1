@@ -10,7 +10,7 @@ export class HeatMap extends React.Component {
         super(props);
 
         this.state = {
-            center: { lat: -1.486, lng: 36.950 },
+            center: this.props.positions[0],
             zoom: 11,
         }
 
@@ -26,27 +26,6 @@ export class HeatMap extends React.Component {
     }
 
     render() {
-
-        const data = [
-            { lat: 37.782, lng: -122.447 },
-            { lat: 37.782, lng: -122.445 },
-            { lat: 37.782, lng: -122.443 },
-            { lat: 37.782, lng: -122.441 },
-            { lat: 37.782, lng: -122.439 },
-            { lat: 37.782, lng: -122.437 },
-            { lat: 37.782, lng: -122.435 },
-            { lat: 37.785, lng: -122.447 },
-            { lat: 37.785, lng: -122.445 },
-            { lat: 37.785, lng: -122.443 },
-            { lat: 37.785, lng: -122.441 },
-            { lat: 37.785, lng: -122.439 },
-            { lat: 37.785, lng: -122.437 },
-            { lat: 37.785, lng: -122.435 },
-            { lat: -1.486, lng: 36.950 },
-            { lat: -1.486, lng: 36.950 },
-            { lat: -1.486, lng: 36.950 },
-            { lat: -1.486, lng: 36.950 }
-        ];
 
         const heatMapData = {
             positions: this.props.positions,

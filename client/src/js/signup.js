@@ -2,7 +2,6 @@ import React from 'react';
 import '../css/signup.css';
 import Axios from "axios";
 import shangri from "../icons/shangri.jpg";
-import QrReader from 'react-qr-scanner';
 import { ScannerPopup } from '../js/scannerPopup.js';
 import swal from 'sweetalert';
 

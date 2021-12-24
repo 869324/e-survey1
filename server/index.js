@@ -133,6 +133,11 @@ app.get("/GetQuestions", (req, res) => {
                 questions: result
             });
         }
+        else {
+            res.send({
+                questions: null
+            });
+        }
     });
 
 });
@@ -144,6 +149,11 @@ app.get("/GetAllOptions", (req, res) => {
         if (result.length > 0) {
             res.send({
                 options: result
+            });
+        }
+        else {
+            res.send({
+                options: null
             });
         }
     });
@@ -159,16 +169,11 @@ app.get("/GetAllResponses", (req, res) => {
                 responses: result
             });
         }
-    });
-
-});
-
-app.get("/test/:value", (req, res) => {
-    const someValue = req.params.value;
-    const query = `select * from responses`;
-
-    res.send({
-        value: someValue
+        else {
+            res.send({
+                responses: null
+            });
+        }
     });
 
 });
@@ -269,6 +274,11 @@ app.post("/submitResponse", (req, res) => {
                 status: true
             });
         }
+        else {
+            res.send({
+                status: false
+            });
+        }
     });
 
 });
@@ -291,6 +301,11 @@ app.get("/GetAllQuestions", (req, res) => {
 
             });
         }
+        else {
+            res.send({
+                questions: null
+            });
+        }
     });
 
 });
@@ -303,6 +318,11 @@ app.get("/GetLocations", (req, res) => {
             res.send({
                 locations: result
 
+            });
+        }
+        else {
+            res.send({
+                locations: null
             });
         }
     });
@@ -326,6 +346,12 @@ app.get("/GetQuestionOptions/:id", (req, res) => {
                 Options: options
             });
         }
+        else {
+            res.send({
+                Question: id,
+                Options: null
+            });
+        }
     });
 
 });
@@ -336,6 +362,7 @@ app.get("/GetQuestionResponse/:id", (req, res) => {
     const query2 = `select * from responses where option_id = ?`;
 
     db.query(query1, [id], (err, result1) => {
+        console.log(result1)
         if (result1.length > 0) {
             const options = [];
             result1.forEach(elem => {
@@ -352,10 +379,22 @@ app.get("/GetQuestionResponse/:id", (req, res) => {
                             });
                         }
                     }
+                    else {
+                        res.json({
+                            Question: id,
+                            Answers: null
+                        });
+                    }
                 });
 
             });
 
+        }
+        else {
+            res.json({
+                "Error Msg": "Question does not exist"
+
+            });
         }
     });
 
@@ -370,6 +409,6 @@ app.post("/recordLocation", (req, res) => {
     db.query(query, [lat, lng]);
 });
 
-app.listen(process.env.PORT || 3080, () => {
+app.listen(3080, () => {
     console.log("server running on port 3080");
 })

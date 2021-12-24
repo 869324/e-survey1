@@ -1,7 +1,5 @@
 import React from 'react';
 import '../css/editPopup.css';
-import Axios from "axios";
-import Add from "../js/addTemplate.js";
 import swal from "sweetalert";
 import QrReader from "react-qr-scanner";
 

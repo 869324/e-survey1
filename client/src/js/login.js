@@ -5,17 +5,13 @@ import { withRouter } from "react-router-dom";
 import shangri from "../icons/shangri.jpg";
 import swal from 'sweetalert';
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
 export class Login extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      email: "admin@shangrila.gov.un",
-      password: "shangrila@2021$",
+      email: "",
+      password: "",
       type: "resident"
     }
 
@@ -56,7 +52,7 @@ export class Login extends React.Component {
     const type = this.state.type;
 
     if (email == "" || password == "") {
-      alert("Enter all details please");
+      swal({ title: "Enter all details please", icon: "warning" });
     }
     else {
       Axios.post("http://localhost:3080/login", {
